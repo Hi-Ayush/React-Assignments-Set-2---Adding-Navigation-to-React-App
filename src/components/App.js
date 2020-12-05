@@ -4,7 +4,7 @@ import About from "./About";
 import Home from "./Home";
 import Invalid from "./Invalid";
 import LocationDisplay from "./LocationDisplay";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch, Redirect } from "react-router-dom";
 class App extends Component {
   render() {
     return (
