@@ -4,7 +4,7 @@ import About from "./About";
 import Home from "./Home";
 import Invalid from "./Invalid";
 import LocationDisplay from "./LocationDisplay";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch, Redirect } from "react-router-dom";
 class App extends Component {
   render() {
     return (
@@ -14,7 +14,7 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/" component={Invalid} />
+          <Redirect to="/" component={Invalid} />
         </Switch>
         <LocationDisplay />
       </div>
